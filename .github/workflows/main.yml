@@ -20,7 +20,7 @@ jobs:
       - name: Setup with Gradle
         run: chmod +x gradlew
       - name: Build with Gradle
-        run: ./gradlew build
+        run: ./gradlew clean build
       - name: Archive artifacts (Build)
         uses: actions/upload-artifact@v4
         if: success()
